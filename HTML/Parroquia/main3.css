@@ -1,0 +1,44 @@
+.encabezado{
+    display: block;
+    text-align: center;
+}
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(247, 188, 78);
+    display: inline-block;
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 20px 20px;
+    border-radius: 2em;
+   /* border: 7px solid #a22;**/
+    box-shadow: 0px 0px 10px 5px  #000;/*Permite la creacion de sombras al texto o cajas*/
+    text-shadow: 2px 2px 7px #fff,2px 2px 7px #fff;
+    transform: rotate(0deg);
+}
+/*Outline*/
+/*propiedad acortada  genera un borde sin afectar a las demas cajas no ocupa espacio
+adicional en el DOM*/
+.caja1{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    margin: auto;
+    /*border: 10px solid blue;*/
+    outline:10px solid rgb(40, 255, 155) ;/*PAra resaltar objetos*/
+}
+.caja2{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    margin: auto;/*establece un margen de 50 a los lados de los objetos*/
+
+}
+/*POSITION*/
+div {
+    width: 120;
+    height: 120;
+    display: block;
+    background: rgb(211, 255, 13);
+}
+

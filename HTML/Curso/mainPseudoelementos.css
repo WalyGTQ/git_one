@@ -1,0 +1,158 @@
+/*hace referencia a un elemento que no es un elemento*/
+*{
+    font-weight: 100;
+    font-size: 20px;
+}
+b{
+    font-weight: bold;
+}
+p{
+    text-align: justify;
+    padding: 10px;
+}
+h1{
+    font-weight: lighter;
+    color: red;
+
+}
+h2{
+    font-weight: bold;
+    font-size: 30px;
+}
+.texto{
+    padding: 20px;
+}
+.texto::first-line{
+    color: rgb(248, 202, 51);
+    font-size:2em;
+}
+.texto2::first-letter{
+    color: rgb(248, 202, 51);
+    font-size:2em;
+}
+/*Edicion codigo para el placeholder*/
+form{
+    margin: 100px;
+    display: block;
+    background-color: blueviolet;
+    padding: 50px;
+    width: 50%;
+}
+input{
+    padding: 6px;
+    width: 100%;
+    transition: all .6s;
+    text-align: center;
+    color: black;
+    font-family: 'sen','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+input::placeholder{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.342);
+    border-radius: 10px;
+    font-family: 'sen','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*propiedad selection*/
+.texto3{
+    text-align: justify;
+    padding: 20px;
+}
+.texto3::selection{
+    color: rgb(10, 10, 10);
+    background-color: rgba(230, 198, 18, 0.548);
+    border-radius: 10px;
+}
+/*Ahora el uso de after  y before*/
+.texto4::after{
+    content: "Todo Tendencias";
+    color: wheat;
+    background-color: black;
+}
+.texto4::before{
+    content: "Quiza me suscriba ";
+    color: tomato;
+}
+
+/*Pseudo Clase Hover*/
+.texto5{
+    display: block;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.342);
+    margin: 20px 20px 20px 20px;
+    transition: background-color 1s, height 1s;
+}
+.texto5 p{
+    display: block;
+    text-align: center;
+    padding: 20px;
+    font-family: 'sen','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: color 1s,font-size 1s;/*Podemos usar la propiedad all para darle el tiempo a todo o separar por comas para especificar algun elemento*/
+}
+.texto5:hover{
+    background-color: sandybrown;
+    color: white;
+    height: 80px;
+}
+.texto5 p:hover{
+
+    font-weight: bolder;
+    font-size: 30px;
+}
+button{
+    margin: 40px;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    font-family:'sen',Arial, Helvetica, sans-serif;
+    transition: all 1s;
+}
+button:hover{
+    background-color: white;
+    color: black;
+}
+
+/*Prueas con Link*/
+a{
+    margin: 40px;
+    display: block;
+
+}
+a:link{/*PAra los elementos tipo link que no hayan sido visitados aun*/
+    color: rgb(226, 168, 43);
+    font-weight: bolder;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+a:visited{/*para los elementos tipo link que ya fueron visitados*/
+    color: crimson;
+}
+/*Ralizando pruevas con la propiedad active*/
+.texto6{
+    width: 250px;
+    height: 250px;
+    background-color: coral;
+    margin: 30px;
+    transition: background-color 1s,width 1s,height 1s;
+}
+.texto6:active{
+    background-color: black;
+    width: 200px;
+    height: 200px;
+}
+/*Uso de la propiedad focus en un input*/
+.input1:focus{
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+    font-family: 'sen','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+}
+/*Uso de la propiedad LAng ejemplo en css*/
+.texto7 p:lang(es){/*Recibe como parametro el codigo del lenguaje al que se le decea colocar los efectos, aparte de seleccionarlo*/
+    color: white;
+    background-color: rgba(236, 84, 236, 0.568);
+    font-family: 'sen','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}

@@ -1,0 +1,35 @@
+/*Trabajando con Cursor*/
+*{
+    font-family: 'sen','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    margin: 20px;
+    display: block;
+    text-align: center;
+}
+p{
+    padding: 10px;
+    text-align: justify;
+}
+.caja{
+    margin: 25px;
+    width: 200px;  
+    height: 300px;
+    border: 2px solid gray;
+    background-color: hotpink;
+    cursor:help;
+    transition: all 1s;
+}
+.caja:active{
+    cursor: progress;
+}
+.caja1{
+    margin: 25px;
+    width: 200px;  
+    height: 300px;
+    border: 2px solid gray;
+    background-color: rgb(228, 255, 105);
+    cursor:help;
+    transition: all 1s;
+    opacity: .4;/*JUgamos con la Opacidad del elemento*/
+}

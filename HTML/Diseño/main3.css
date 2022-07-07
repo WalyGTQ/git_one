@@ -1,0 +1,26 @@
+/**{
+    color: rgb(24, 0, 112);
+
+}*/
+
+h1{
+    color: rgb(226, 43, 43);
+    font-family: 'Raleway', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 2;/*PAra crear espacios entre letras arriba y abajo*/
+    font-weight: lighter; /*MOdifica el grososr de las letras*/
+    font-stretch:expanded;
+}
+
+.titulo1 {
+    display:inline;
+}
+
+.h2 {
+    background-color: rgb(156, 73, 233);
+    display: inline-block;
+    padding: 10px;
+    height: 80px;
+    width: 100px;
+    box-sizing: border-box;
+    text-align: center;
+}

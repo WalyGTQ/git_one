@@ -1,0 +1,234 @@
+*{
+    font-family: 'sen','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+
+}
+.text1{
+   
+    position: absolute;
+    top: 30vh;
+    width: 100%;
+    height: 70%;
+    display: block;
+    z-index: 100;
+}
+.movil{
+    display: none;
+}
+.encabezado{
+    z-index: 100;
+    width: 100%;
+    height:30vh;
+    display: block;
+    position: fixed;
+    background-color: black;
+}
+.encabezado img{
+    object-fit:cover;    
+    width: 100vw;
+    height: 30vh;
+    object-position: center;
+    opacity: 70%;
+    display: flex;
+    align-items: center;
+}
+
+h1{
+    position: relative;
+    font-weight:lighter;
+    font-size:35px;
+    padding: 20px;
+    top: -240px;
+    text-transform:uppercase;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    /*background-color: rgba(0, 0, 0, 0.74);*/
+    margin: 5px 10%;
+    border-radius: 15px;
+    text-shadow:1px 1px 9px rgb(243, 243, 247);
+    letter-spacing: 10px;
+    transition: all 2s;
+}
+.titulo2{
+    display: block;
+    position: relative;
+    text-align: center;
+    top: -240px;
+    font-weight: lighter;
+    text-shadow:5px 5px 15px rgb(243, 243, 247);
+    letter-spacing: 10px;
+    color: rgb(255, 255, 255);
+    transition: all 1s;
+}
+.titulo2:hover{
+    letter-spacing: 12px;
+}
+.encabezado nav{
+    display: block;
+    position: relative;
+    top: -200px
+    
+}
+.encabezado ul{
+    
+    text-align: center;
+}
+.encabezado ul li{
+    display: inline-block;
+}
+.encabezado ul li a{
+    text-decoration: none;
+    margin: 5px 20px;
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    /*background-color: rgba(0, 0, 0, 0.74);*/
+    
+    padding: 5px 25px;
+    text-shadow:2px 2px 5px rgb(243, 243, 247);
+    border: 1px solid rgb(250, 250, 250);
+    border-radius: 15px;
+    transition: all .8s;
+    
+}
+.text{
+    position: relative;
+    top:30vh ;
+    z-index: 1;
+
+}
+
+.encabezado ul li a:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.822);
+    border-radius: 15px;
+    padding: 5px 25px;
+    font-size: 20px;
+}
+h1:hover{
+    letter-spacing: 12px;
+}
+.welcome{
+    width: 100%;
+    display: inline-block;
+    position: absolute;
+    top: 33vh;
+    z-index: 5000;
+    color: rgb(126, 125, 125);
+    text-align: center;
+    font-size: 2em;
+}
+.titulo3{
+    position: absolute;
+    top: 39%;
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    color: rgb(128, 125, 128);
+}
+.parr1{
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: 47%;
+    padding: 0px 40px;
+    text-align: justify;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow:auto;
+    z-index: 5000;
+}
+footer{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    bottom: 0px;
+    text-align: center;
+    background-color: rgb(236, 225, 204);
+    color: rgb(161, 161, 161);
+
+}
+footer p{
+    margin: 10px;
+}
+
+
+/*-----------------------edit in movil*/
+@media only screen and (max-width: 845px){
+.encabezado{
+    display: inline-block;
+    width: 100%;
+    height: 30vh;
+}
+
+.nav1 ul{
+    display: none;
+}
+h1{
+    font-size: 45px;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+}
+.movil{
+    position:absolute;
+    display: block;
+    width: 100%;
+    height: 160px;
+    top: 30vh;
+    z-index: 1000;
+}
+ .movil ul li a{
+     text-decoration: none;
+     display: block;
+     text-align: center;
+     background-color: rgba(235, 224, 224, 0.13);
+     margin: 5px;
+     padding: 5px;
+     border-radius: 15px;
+     font-size: 20px;
+     color: rgb(0, 0, 0);
+     text-shadow:2px 2px 5px rgb(243, 243, 247);
+     border: 1px solid black;
+    transition: all 1s;
+ }   
+ .movil ul li a:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.822);
+    border-radius: 15px;
+    padding: 5px 25px;
+    font-size: 25px;
+
+ }
+ .titulo2{
+     display: none;
+ }
+ .welcome{
+    width: 100%;
+    display: inline-block;
+    position: absolute;
+    top: 50vh;
+    z-index: 5000;
+    color: rgb(44, 40, 40);
+    text-align: center;
+    font-size: 2em;
+}
+.titulo3{
+    position: absolute;
+    top: 55%;
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    color: rgb(128, 125, 128);
+}
+.parr1{
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 60%;
+    padding: 0px 40px;
+    text-align: justify;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow:auto;
+    z-index: 5000;
+}
+}

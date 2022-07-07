@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="mainPseudoelementos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
+    <title>Pseudoelementos</title>
+</head>
+<body>
+    <h1>Pseudo-elementos</h1>
+    <br>
+    <h2>::first-line</h2>
+    <p>hace referencia a la primera linea de texto que usemos, <b>no funcion en elementos inline</b> </p>
+    <div class="texto">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus unde amet quaerat minus? Commodi, animi beatae delectus minima accusantium,
+         dolorum dolore labore natus nobis illo quod optio veritatis, quisquam cum.
+    </div>
+    <br>
+    <h2>::first-letter</h2>
+    <div class="texto2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quisquam doloremque eveniet illo harum sequi quo praesentium hic eaque. Totam, explicabo in. Voluptatum quibusdam aspernatur porro ullam veniam qui adipisci.
+    </div>
+    <br>
+    <h2>::placeholder</h2>
+    <form action="">
+        <input type="text" placeholder="Ingrese Nombre Aca:">
+    </form>
+    <div class="texto3">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, eius. Laborum incidunt quas sed quos, voluptate, 
+        debitis adipisci sint excepturi in deleniti reprehenderit qui ea animi tempora sequi. Numquam, pariatur?  
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, eius. Laborum incidunt quas sed quos, voluptate, 
+        debitis adipisci sint excepturi in deleniti reprehenderit qui ea animi tempora sequi. Numquam, pariatur? 
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, eius. Laborum incidunt quas sed quos, voluptate, 
+        debitis adipisci sint excepturi in deleniti reprehenderit qui ea animi tempora sequi. Numquam, pariatur? 
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, eius. Laborum incidunt quas sed quos, voluptate, 
+        debitis adipisci sint excepturi in deleniti reprehenderit qui ea animi tempora sequi. Numquam, pariatur? 
+    </div>
+    <br>
+    <h2>::begore  <i>and</i>  ::after</h2>
+    <p>Son elementos en linea y son hijos del elemento al cual se le aplica</p> <br>
+    <div class="texto4">
+        <b>a</b> 
+    </div>
+    <br>
+    <hr>
+    <h1>Pseudo-Clases</h1>
+    <br>
+    <h2>:hover</h2>
+    <p>Esta Pseudo-clase funciona en cualquier elemento a exepcion <br>de los Pseudo-elementos</p>
+    <div class="texto5">
+        <p>Texto Prueba</p>
+    </div>
+    <p>otro ejemplo:</p>
+    <button type="submit">Enviar</button>
+    <br>
+    <h2>:link</h2>
+    <p>lo que hace es cambiar un link que aun no visitamos(link), <br>o cuando ya lo hemos visitado(visite)</p>
+    <br>
+    <a href="http://google.com.gt" target="_BLANCK">ir a Google</a>
+    <a href="http://Youtube.com.gt" target="_BLANCK">ir a Youtube</a>
+    <a href="http://Facebook.com.gt" target="_BLANCK">ir a Facebook</a>
+    <br>
+    <h2>:active</h2>
+    <p>Esta Pseudo Clase nos permite cambiar los estiles al dejar apretado por ejemplo: </p>
+    <div class="texto6">
+        <p>
+        </p>
+    </div>
+    <br>
+    <h2>:focus</h2>
+    <p>Se utiliza para las elementos tipo input. funciona cuando tenemos seleccionado el elemento y le damos clic que podemos cambiar las tranciciones o efectos</p>
+    <input class="input1" type="text" placeholder="Otro Ingreso">
+    <br>
+    <h2>:lang</h2>
+    <div class="texto7">
+        <p lang="en">How are You</p>
+        <p lang="es">¿Hola como estas?</p>
+    </div>
+</body>
+</html>

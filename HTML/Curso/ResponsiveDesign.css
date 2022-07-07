@@ -1,0 +1,143 @@
+*{
+    font-family: 'sen','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*h1{
+    margin: 20px;
+    display: block;
+    text-align: center;
+}
+p{
+    padding: 10px;
+    text-align: justify;
+}
+/*div{
+    width: 49%;
+    display: inline-block;
+    padding: 20px;
+    background-color: grey;
+}*/
+
+.nav__responsive-ul{
+    display: none;
+    margin-top: 37px;
+    transition: all 1s;
+}
+.nav{
+    background-color: rgb(235, 199, 132);
+}
+.nav__li{
+    display: inline-block;
+    padding: 12px;
+    color: black;  
+    transition: all 1s;
+}
+.nav__li:hover > a{
+    color: rgb(248, 118, 11);  
+}
+.nav__li a{
+    color: black;
+    text-decoration: none;
+    transition: all 1s;
+}
+.nav__li:hover{
+    color: rgb(248, 118, 11);  
+}
+.nav__li i{
+    /*width: 30px;*/
+    box-sizing: border-box;
+    text-align: right;
+    margin-left: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nav__responsive-button-container {
+    position: absolute;
+    width: 100%;
+    font-size: 25px;
+    background-color: rgb(255, 174, 0);
+    margin-top: -64px;
+}
+
+.nav__responsive-button {
+    padding: 6px 20px;
+    text-align: right;
+    width: 100%;
+}
+
+
+
+.caja{
+    background-color: rgb(223, 213, 213);
+}
+@media only screen and (max-width: 570px) {
+    .nav__ul{
+        display: none;
+    }
+
+    .nav{
+        height: 37px;
+        width: 100%;
+    }
+    .nav__responsive-ul{
+        display: block;
+        position: absolute;
+        width: 100%;
+        margin-top: 37px;
+        padding-top: 27px;
+        height: 37px;
+    }
+    .nav__li-container{
+        position: relative;
+        top: -1000px;
+        height: calc(100vh - 64px);
+        background-color: rgb(250, 230, 150);
+        z-index: 1;
+        transition: all 1s;
+        width: 75%;
+        padding-top: 27px;
+    }
+    .nav__responsive-li{
+        width: 100%;
+        padding: 10px;
+    }
+    .nav__responsive-li i{
+        box-sizing: border-box;
+        text-align: center;
+        margin-right: 5px;
+        width: 30px;
+        color: rgb(255, 174, 0);
+    }
+    .nav__responsive-li a{
+        color: rgb(255, 174, 0);
+        text-decoration: none;
+    }
+    .nav__responsive-ul:hover > .nav__li-container {
+        top: -27px;
+
+    }
+
+
+/*
+
+    div {
+        display: block;
+        width: 100%;
+        border-radius: 15px;
+        margin-top: 10px;
+        
+    }
+    h2{
+        text-align: center;
+    }*/
+}

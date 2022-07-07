@@ -1,0 +1,48 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 100px;
+    font-size: 30px;
+}
+.c1,.c2,.c3,.c4{
+    width: 120px;
+    height: 120px;
+    display: block;
+    background: brown;
+}
+.c1{
+    background-color: chartreuse;
+}
+.c2{
+    background-color: rgb(241, 185, 62);
+    position: relative;/*Permite manipular la posicion de un objeto sin afectar el flujo html*/
+    top: 60px;/*Porpiedad adquirida por position*/
+    left: 20px;
+    z-index: 1;/*Porpiedad valida unicamente para objetos con el parametro position en Z*/
+}
+.c3{
+    background-color: rgb(74, 9, 179);
+    position: relative;
+    z-index: 0;
+
+}
+.c4{
+    background-color: rgb(235, 41, 41);
+}
+/*Conflicto de Z-index con elementos heredados unicamente lo podemos usar colocando un -1 en ele elemento hijo para que este quede detras*/
+
+.contenedor{
+    width: 300px;
+    height: 300px;
+    background: coral;
+    margin: 40px;
+    position: relative;
+}
+.hijo{
+    width: 120px;
+    height: 120px;
+    background: cornflowerblue;
+    position:relative;
+    top: -20px;
+    left: -20px;
+    z-index: -1;
+}
